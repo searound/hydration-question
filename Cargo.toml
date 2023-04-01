@@ -1,0 +1,18 @@
+[workspace]
+members = ["app", "wasm", "server"]
+resolver = "2"
+
+[profile.release]
+lto = true
+opt-level = 's'
+
+[[workspace.metadata.leptos]]
+name = "regsite"
+bin-package = "server"
+lib-package = "wasm"
+
+site-root = "target/site"
+assets-dir = "assets"
+
+#bin-features = ["ssr"]
+#lib-features = ["hydrate"]

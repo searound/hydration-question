@@ -1,0 +1,13 @@
+[package]
+name = "app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+leptos = { version = "0.2.5", default-features = false}
+leptos_meta = { version = "0.2.5" }
+leptos_router = { version = "0.2.5" } 
+
+[features]
+hydrate = [ "leptos/hydrate", "leptos_router/hydrate", "leptos_meta/hydrate" ]
+ssr = [ "leptos/ssr", "leptos_router/ssr", "leptos_meta/ssr" ]
