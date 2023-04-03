@@ -8,7 +8,7 @@ console_error_panic_hook = "0.1"
 axum = "0.6"
 tower-http = { version = "0.4", features = ["fs"] }
 tokio = { version = "1", features = [ "macros", "parking_lot"] }
-leptos = { version = "0.2.5", features = ["ssr"]}
+leptos = { version = "0.2.5", default-features = false, features = ["ssr"]}
 leptos_axum = { version = "0.2.5" }
 
 tower = { version = "0.4" }
